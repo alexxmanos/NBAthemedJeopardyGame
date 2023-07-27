@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(46,46,46);
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: DejaVu Sans Mono, monospace
+    font-family: DejaVu Sans Mono, monospace;
     }
   
   #game {
@@ -18,7 +18,7 @@ body {
   .card {
     width: 160px;
     height: 120px;
-    background-color: rbg(26,26,255);
+    background-color: rgb(26,26,255);
     border-left: solid rgb(19,19,160) 10px; 
     border-right: solid rgb(11,11,91) 10px;
     border-top: solid rgb(1,61,200) 10px;
