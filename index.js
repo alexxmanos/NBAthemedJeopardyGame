@@ -216,7 +216,10 @@ function addCatergory(category) {
         card.setAttribute('data-answer-1', question.answers[0])
         card.setAttribute('data-answer-2', question.answers[1])
         card.setAttribute('data-answer-3', question.answers[2])
+        card.setAttribute('data-correct', question.correct)
+        card.setAttribute('data-value', card.getInnerHTML())
 
+        card.addEventListener('click', flipCard)
 })
                                
                               
@@ -224,3 +227,16 @@ function addCatergory(category) {
 }
 
 JeopardyCatergories.forEach(catergory => addCatergory(catergory))
+
+function flipCard() {
+  this.innerHTML = ""
+  const textDisplay = document.createElement('div')
+  textDisplay.classList.add('card-text')
+  const firstButton = document.createElement('button')
+  const secondButton = document.createElement('button')
+  const thirdButton = document.createElement('button')
+  firstButton.getInnerHTML = this.getAttribute('data-answer-1')
+  secondButton.getInnerHTML = this.getAttribute('data-answer-2')
+  thirdButton.getInnerHTML = this.getAttribute('data-answer-3')
+  this.append(textDisplay, firstButton, secondButton, thirdButton)
+}
