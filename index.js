@@ -211,6 +211,12 @@ function addCatergory(category) {
         if(question.level === 'hard5') {
           card.innerHTML = 500
         }
+
+        card.setAttribute('data-question', question.question)
+        card.setAttribute('data-answer-1', question.answers[0])
+        card.setAttribute('data-answer-2', question.answers[1])
+        card.setAttribute('data-answer-3', question.answers[2])
+
 })
                                
                               
