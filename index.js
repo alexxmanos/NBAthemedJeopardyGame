@@ -195,19 +195,19 @@ function addCatergory(category) {
         const card = document.createElement('div')
         card.classList.add('card')
         column.append(card)
-        if(question.level === 'easy1'){
+        if(question.level === 'easy1') {
           card.innterHTML = 100
         }
-      if(question.level === 'easy2'){
+      if(question.level === 'easy2') {
           card.innterHTML = 200
         }
-      if(question.level === 'medium3'){
+      if(question.level === 'medium3'){ 
           card.innterHTML = 300
         }
-      if(question.level === 'medium4'){
+      if(question.level === 'medium4'){ 
           card.innterHTML = 400
         }
-      if(question.level === 'hard5'){
+      if(question.level === 'hard5') {
           card.innterHTML = 500
         }
 })
