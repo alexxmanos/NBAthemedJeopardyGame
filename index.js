@@ -48,8 +48,8 @@ const JeopardyCatergories = [
           },
           {
             question: "The South's Big Three",
-            answers: ["LBJ, D.Wade, & Bosh", "KG, Ray Allen & Paul Pierce", "Steph, Klay, & Draymond"],
-            correct: "LBJ, D.Wade, & Bosh",
+            answers: ["LBJ, DWade, Bosh", "KG, Ray Allen, Paul Pierce", "Steph, Klay, Draymond"],
+            correct: "LBJ, DWade, Bosh",
             level: "easy2"
           },
           {
@@ -131,7 +131,7 @@ const JeopardyCatergories = [
           {
             question: "Has the most triple-doubles in NBA history (198)",
             answers: ["Russell Westbrook", "Oscar Robertson", "Magic Johnson"],
-            correct: "Oscar Robertson",
+            correct: "Russell Westbrook",
             level: "medium4"
           },
           {
