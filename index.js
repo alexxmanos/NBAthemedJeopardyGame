@@ -238,8 +238,16 @@ function flipCard() {
   const firstButton = document.createElement('button')
   const secondButton = document.createElement('button')
   const thirdButton = document.createElement('button')
-  firstButton.getInnerHTML = this.getAttribute('data-answer-1')
-  secondButton.getInnerHTML = this.getAttribute('data-answer-2')
-  thirdButton.getInnerHTML = this.getAttribute('data-answer-3')
+  firstButton.classList.add('first-button')
+  secondButton.classList.add('second-button')
+  thirdButton.classList.add('third-button')
+  firstButton.innerHTML = this.getAttribute('data-answer-1')
+  secondButton.innerHTML = this.getAttribute('data-answer-2')
+  thirdButton.innerHTML = this.getAttribute('data-answer-3')
   this.append(textDisplay, firstButton, secondButton, thirdButton)
+
+  console.log(firstButton,secondButton,thirdButton)
+
+  const allCards = Array.from(document.querySelector('.card'))
+    allCards.forEach(card => card.removeEvenListener('click', flipCard))
 }
