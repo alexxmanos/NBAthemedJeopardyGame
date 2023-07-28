@@ -7,31 +7,31 @@ const JeopardyCatergories = [
     questions: [
       {
         question: "What team won the 2023 NBA Finals?",
-        answers: ["The Nuggets", "The Warriors", "The Bucks"],
-        correct: "The Nuggets",
+        answers: ["Nuggets", "Warriors", "Bucks"],
+        correct: "Nuggets",
         level: "easy1"
       },
       {
         question: "This NBA team has three-peated twice",
-        answers: ["The Celtics", "The Lakers", "The Bulls"],
-        correct: "The Bulls",
+        answers: ["Celtics", "Lakers", "Bulls"],
+        correct: "Bulls",
         level: "easy2"
       },
       {
         question: "This Western Conference team has the most NBA Titles",
-        answers: ["The Spurs", "The Lakers", "The Warriors"],
-        correct: "The Lakers",
+        answers: ["Spurs", "Lakers", "Warriors"],
+        correct: "Lakers",
         level: "medium3"
       },
       {
         question: "This Eastern Conference team has the most NBA Titles",
-        answers: ["The Celtics", "The Bulls", "The Heat"],
-        correct: "The Celtics",
+        answers: ["Celtics", "Bulls", "Heat"],
+        correct: "Celtics",
         level: "medium4"
       },
       {
         question: "This NBA team has the most NBA Titles (17 Titles)",
-        answers: ["The Lakers", "The Celtics", "Both"],
+        answers: ["Lakers", "Celtics", "Both"],
         correct: "Both",
         level: "hard5"
       }
@@ -42,30 +42,30 @@ const JeopardyCatergories = [
     questions: [
         {
             question: "This Player Scored 100 points in 1 game",
-            answers: ["Kobe Bryant", "Damian Lillard", "Wilt Chamberlain"],
+            answers: ["Kobe", "Damian Lillard", "Wilt Chamberlain"],
             correct: "Wilt Chamberlain",
             level: "easy1"
           },
           {
-            question: "What players are considered The South's Big Three?",
-            answers: ["LeBron James, Dwayne Wade, and Chris Bosh ", "Kevin Garnett, Ray Allen and Paul Pierce", "Steph Curry, Klay Thompson, and Draymond Green"],
-            correct: "LeBron James, Dwayne Wade, and Chris Bosh",
+            question: "The South's Big Three",
+            answers: ["LBJ, D.Wade, & Bosh", "KG, Ray Allen & Paul Pierce", "Steph, Klay, & Draymond"],
+            correct: "LBJ, D.Wade, & Bosh",
             level: "easy2"
           },
           {
-            question: "This NBA Player has the most MVPs in NBA History",
+            question: "Has the most MVPs in NBA History",
             answers: ["Michael Jordan", "Kareem Abdul-Jabbar", "Bill Russell"],
             correct: "Kareem Abdul-Jabbar",
             level: "medium3"
           },
           {
-            question: "Considered to be one of the GOAT's and he retired to play baseball",
-            answers: ["Michael Jordan", "Kobe Bryant", "LeBron James"],
-            correct: "Michael Jordan",
+            question: "Considered to be one of the GOAT's & he retired to play baseball",
+            answers: ["Jordan", "Kobe", "LeBron"],
+            correct: "Jordan",
             level: "medium4"
           },
           {
-            question: "The youngest player to ever win an NBA MVP award",
+            question: "Youngest player to ever win an NBA MVP award",
             answers: ["LeBron James", "Kobe Bryant", "Derrick Rose"],
             correct: "Derrick Rose",
             level: "hard5" 
@@ -82,7 +82,7 @@ const JeopardyCatergories = [
             level: "easy1"
           },
           {
-            question: "What team wears gold and purple ?",
+            question: "What team wears gold and purple?",
             answers: ["Lakers", "Kings", "Jazz"],
             correct: "Lakers",
             level: "easy2"
@@ -100,7 +100,7 @@ const JeopardyCatergories = [
             level: "medium4"
           },
           {
-            question: "What is the New York Knicks full team name?",
+            question: "The New York Knicks full team name?",
             answers: ["Knicklebacks", "Knickerbackers", "Knickerbockers"],
             correct: "Knickerbockers",
             level: "hard5" 
@@ -111,33 +111,33 @@ const JeopardyCatergories = [
     genre: "Stats",
     questions: [
         {
-            question: "The all-time 3pt leader with 3,390 3 points made",
+            question: "All-time 3pt leader with 3,390 3 points made",
             answers: ["Stephen Curry", "Ray Allen", "James Harden"],
             correct: "Stephen Curry",
             level: "easy1"
           },
           {
-            question: "The most points ever scored in one game by a player?",
+            question: "Most points ever scored in one game by a player?",
             answers: ["81", "100", "71"],
             correct: "100",
             level: "easy2"
           },
           {
-            question: "The all-time assist leader with 15,806 assists",
+            question: "All-time assist leader with 15,806 assists",
             answers: ["Jason Kidd", "Chris Paul", "John Stockon"],
             correct: "John Stockon",
             level: "medium3"
           },
           {
-            question: "The player with the most triple-doubles in NBA history (198)",
+            question: "Has the most triple-doubles in NBA history (198)",
             answers: ["Russell Westbrook", "Oscar Robertson", "Magic Johnson"],
             correct: "Oscar Robertson",
             level: "medium4"
           },
           {
-            question: "The player with the most NBA Championships (11)",
+            question: "Player with the most NBA Championships (11)",
             answers: ["Bill Russell", "Kareem Abdul-Jabbar", "Sam Jones"],
-            correct: "Knickerbockers",
+            correct: "Bill Russell",
             level: "hard5" 
           }
     ]
@@ -152,7 +152,7 @@ const JeopardyCatergories = [
             level: "easy1"
           },
           {
-            question: "The winner of the 2015 NBA Slam Dunk Contest",
+            question: "Winner of the 2015 NBA Slam Dunk Contest",
             answers: ["Aaron Gordon", "Zach Lavine", "John Wall"],
             correct: "Zach Lavine",
             level: "easy2"
@@ -170,7 +170,7 @@ const JeopardyCatergories = [
             level: "medium4"
           },
           {
-            question: "Who was the Number 1 draft pick in the 2008 NBA Draft",
+            question: "The Number 1 draft pick in the 2008 NBA Draft",
             answers: ["Derrick Rose", "Blake Griffin", "John Wall"],
             correct: "Derrick Rose",
             level: "hard5" 
@@ -179,6 +179,7 @@ const JeopardyCatergories = [
   }
 ];
 
+let score = 0
 
 function addCatergory(category) {
     const column = document.createElement('div')
@@ -244,10 +245,41 @@ function flipCard() {
   firstButton.innerHTML = this.getAttribute('data-answer-1')
   secondButton.innerHTML = this.getAttribute('data-answer-2')
   thirdButton.innerHTML = this.getAttribute('data-answer-3')
+  firstButton.addEventListener('click', getResult)
+  secondButton.addEventListener('click', getResult)
+  thirdButton.addEventListener('click', getResult)
   this.append(textDisplay, firstButton, secondButton, thirdButton)
 
-  console.log(firstButton,secondButton,thirdButton)
+  
 
   const allCards = Array.from(document.querySelector('.card'))
     allCards.forEach(card => card.removeEvenListener('click', flipCard))
+}
+
+function getResult() {
+   const allCards = Array.from(document.querySelectorAll('.card'))
+   allCards.forEach(card => card.addEventListener('click', flipCard))
+  
+  const cardOfButton = this.parentElement
+
+   if(cardOfButton.getAttribute('data-correct') == this.innerHTML) {
+      score = score + parseInt(cardOfButton.getAttribute('data-value'))
+      scoreDisplay.innerHTML = score
+      cardOfButton.classList.add('correct-answer')
+      setTimeout(() => {
+        while (cardOfButton.firstChild) {
+          cardOfButton.removeChild(cardOfButton.lastChild)
+        }
+        cardOfButton.innerHTML = cardOfButton.getAttribute('data-value')
+      }, 100)
+   } else {
+      cardOfButton.classList.add('wrong-answer')
+      setTimeout(() => {
+        while (cardOfButton.first){
+          cardOfButton.removeChild(cardOfButton.lastChild)
+      }
+        cardOfButton.innerHTML = 0
+      }, 100)
+   }
+   cardOfButton.removeEvenListener('click' , flipCard)
 }

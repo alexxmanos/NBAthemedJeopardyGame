@@ -31,5 +31,29 @@ body {
   }
 
   .first-button {
-     background-color
+     background-color:lightgray
   }
+
+  .second-button {
+    background-color:lightgray
+ }
+
+ .third-button {
+  background-color:lightgray
+}
+
+.genre-title {
+  background-color: rgb(26,26,255);
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.correct-answer {
+  background-color:green
+}
+
+.wrong-answer {
+  background-color:red
+}
