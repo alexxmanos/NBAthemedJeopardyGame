@@ -4,7 +4,7 @@ For my first project I created a NBA Jeopardy Game displays that a jeopardy like
 
 CSS was used to make the jeopardy game board and style it.
 
-JavaScript was used to add eventListeners, the arrays for the questions and answers, and functions.
+JavaScript was used to add functions, eventListeners and the arrays for the questions and answers.
 
 HTML was used to link my CSS and JavaScript File
 
